@@ -1,0 +1,36 @@
+body {
+    box-sizing: border-box;
+}
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(50px,20%));
+    grid-template-rows: repeat(3,minmax(50px,20%));
+    justify-items: start;
+    max-width: fit-content;
+    border: 1px solid black;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.choose {
+    max-width: 100px;
+}
+
+div[data-cell] {
+    min-width: 100%;
+    border: 1px solid black;
+}
+
+.declare-winner {
+    display: none;
+}
+
+.declare-loser {
+    display: none;
+}

@@ -5,9 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
 </head>
 <body>
-    <h1>Tic tac toe</h1>
+    <header>
+        <h1>Tic tac toe</h1>
+    </header>
+    <main class="main">
+        <h2 class="declare-winner">
+            You won
+        </h2>
+        <h2 class="declare-loser">
+            You lost
+        </h2>
+
+        <section class="select player">
+            <button class="choose">player Sign</button>
+            <button class="new-Round">New round</button>
+            <button class="new-Game">New Game</button>
+            <dialog class="dialog">
+                <form method="dialog">
+                    <select  id="selectplayer">
+                        <option value="X" >X</option>
+                        <option value="O">O</option>
+                    </select>
+                    <button class="cancelBtn">cancel</button>
+                    <button class="confirmBtn">confirm</button>
+                </form>
+            </dialog>
+        </section>
+        <section class="gameboard">
+            <div data-cell="00">X</div>
+            <div data-cell="01">O</div>
+            <div data-cell="02">X</div>
+            <div data-cell="10">O</div>
+            <div data-cell="11">X</div>
+            <div data-cell="12">X</div>
+            <div data-cell="20">O</div>
+            <div data-cell="21">X</div>
+            <div data-cell="22">x</div>
+        </section>
+    </main>
 </body>
 </html>
